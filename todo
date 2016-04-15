@@ -1,2 +1,36 @@
-1. add uniqueness to sensor_type field in mongodb
-2.
+long term goal
+- add uniqueness to sensor_type field in mongodb
+- add module-to-module message format to a new collection 
+
+
+short term goal
+
+- rest apis for
+
+1. /getSensor/:type: done
+2. /getSensor/:type/action: done
+3. /getGateways : return all gateway type names only (gatewaytypes)
+4. /getGateways/:type : return all gateway type INSTANCE (gateways), number of objects and then the data
+5. /getGateways/:type/metadata : return metadata for all gateway type INSTANCE (gateways), number of objects and then the data
+6. /getGateways/:type/static_fields: return static_fields all gateway type INSTANCE (gateways), number of objects and then the data
+7. /getGateways/:type/sensor_data: return sensor_data all gateway type INSTANCE (gateways), number of objects and then the data
+8. /getEndUsers/:appid: return all the users for given appId, number of users and then the data
+9. /getUser/:appId/:gatewayId : return the username (registergateways)
+10. /getGatewayId/:appId/:userid: return the gatewayId (registergateways)
+11. /getApps : returns all appId with owners (applications)
+12. /getRules/:appid : return rules for given app id (rules)
+13. /getGatewayTypeTemplate :
+14. /updateGatewayConfig/:gid : update the config for given gateway in db
+
+// new collection : GatewayConfig
+{
+    "gateway_unique_id" : <>,
+    "config": {}
+}
+
+
+15. /getGatewayConfig/:gid : return the "config"
+
+
+
+2. add all the newly created endpoints to 'endpoint' api with description

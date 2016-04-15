@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var endpoint = require('./routes/endpoint');
+var endpoints = require('./routes/endpoints');
 var getSensorMetadata = require('./routes/sensor');
 
 var app = express();
@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
-app.use('/getapi', endpoint);
+app.use('/endpoints', endpoints);
 app.use('/getSensor', getSensorMetadata);
 
 // catch 404 and forward to error handler
