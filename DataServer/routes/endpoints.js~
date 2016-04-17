@@ -10,12 +10,7 @@ var apis = {
    "/getgateways" : "return all gateway type names",
    "/getgateways/:gateway_type" : "return all gateway type instances",
    "/getgateways/:gateway_type/:metdata" : "return metadata of gatewaytype for given gateway_type ",
-   "/getgateways/:gateway_type/:static_fields" : "return static_fileds of gatewaytype for given gateway_type ",
-   "/getgateways/:gateway_type/:sensor_ddata" : "return sensor_data of gatewaytype for given gateway_type ",
-   "/getendusers/:appid" : "return all the users for given appId ",
-   "/getUser/:app_Id/:gateway_Id" : "return the username using gateway (gateway_Id) in app app_id",
-   "/getApps" : "returns all appIds with owners",
-   "/getRules/:app_id" : "return rules for given app_id"
+   "/getgateways/:gateway_type/:static_fields" : "return static_fileds of gatewaytype for given gateway_type ", 
 }
 
 /* GET users listing. */

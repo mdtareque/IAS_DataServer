@@ -13,7 +13,6 @@ var getGatewaysMetadata = require('./routes/gateways');
 var getEndUsers = require('./routes/getendusers');
 var getUser = require('./routes/getuser');
 var getApps = require('./routes/getapps');
-var getRules = require('./routes/getrules');
 var app = express();
 
 /*var mongoose = require("mongoose")
@@ -42,7 +41,7 @@ app.use('/getSensor', getSensorMetadata);
 app.use('/getGateways', getGatewaysMetadata);
 app.use('/getEndUsers', getEndUsers);
 app.use('/getuser', getUser);
-app.use('/getrules', getRules);
+app.use('/getapps', getApps);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
