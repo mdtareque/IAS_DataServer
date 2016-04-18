@@ -23,7 +23,8 @@ router.get('/:app', function(req, res, next) {
 		   }
 	    if(data){
 		    console.log(json.stringify(data));
-		    res.write(json.stringify(data));  
+	
+		    res.json(json.stringify(data));  
 		}
 		else{
 		        console.log('NO-DATA: gateway type not found')

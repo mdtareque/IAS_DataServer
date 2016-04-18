@@ -48,7 +48,7 @@ router.get('/:type', function(req, res, next) {
 			if(data){  
 				
 				var jsonstr_nRec = json.stringify(data);  	
-				res.write("Number of records: "+data+"\n");
+				//res.write("Number of records: "+data+"\n");
 		    	}	
 		    });
 		    gateways.find({gateway_type_id:json_data._id}).toArray(function(err, data){

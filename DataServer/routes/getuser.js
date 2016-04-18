@@ -7,7 +7,6 @@ var ObjectId = require('mongodb').ObjectId;
 router.get('/:app/:gateway', function(req, res, next) {
     var app_id = req.params.app
     var gateway_id = req.params.gateway;
-    var out=""
     console.log("Requested app_id "+app_id);
     console.log("Requested gateway_id "+gateway_id);   
 	MongoClient.connect("mongodb://localhost:27017/iotdb", function(err, db) {

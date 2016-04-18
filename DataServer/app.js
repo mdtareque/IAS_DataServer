@@ -4,6 +4,7 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+//var notifications = require('./models/notify')
 
 var routes = require('./routes/index');
 var users = require('./routes/users');
@@ -14,6 +15,7 @@ var getEndUsers = require('./routes/getendusers');
 var getUser = require('./routes/getuser');
 var getApps = require('./routes/getapps');
 var getRules = require('./routes/getrules');
+var getNotifications = require('./routes/notifications');
 var app = express();
 
 /*var mongoose = require("mongoose")
@@ -43,7 +45,7 @@ app.use('/getGateways', getGatewaysMetadata);
 app.use('/getEndUsers', getEndUsers);
 app.use('/getuser', getUser);
 app.use('/getrules', getRules);
-
+app.use('/notifications', getNotifications);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

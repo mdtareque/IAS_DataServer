@@ -15,7 +15,8 @@ var apis = {
    "/getendusers/:appid" : "return all the users for given appId ",
    "/getUser/:app_Id/:gateway_Id" : "return the username using gateway (gateway_Id) in app app_id",
    "/getApps" : "returns all appIds with owners",
-   "/getRules/:app_id" : "return rules for given app_id"
+   "/getRules/:app_id" : "return rules for given app_id",
+   "/notifications/:access_token" : "show notifications for a given access token"
 }
 
 /* GET users listing. */
